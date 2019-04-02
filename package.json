@@ -43,6 +43,17 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangjialegh/vue-toast-dialog.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "vue-component",
+    "component",
+    "vue-plugin"
+  ],
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
