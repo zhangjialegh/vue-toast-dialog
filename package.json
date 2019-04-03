@@ -1,6 +1,6 @@
 {
   "name": "vue-toast-dialog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue Toast Component",
   "main": "dist/toast.min.js",
   "author": "zhangjialegh <zjl1195185765@outlook.com>",
@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack --display-error-details --config webpack.config.js"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "vue": "^2.5.2"
   },

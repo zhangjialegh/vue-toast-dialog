@@ -19,6 +19,7 @@
 import TransitionBox from "./TransitionBox.vue";
 export default {
   name:'ToastComponent',
+  components: { TransitionBox },
   data() {
     return {
       title: "提示",
@@ -31,7 +32,6 @@ export default {
       noCb: null
     };
   },
-  components: { TransitionBox },
   methods: {
     close() {
       this.show = false;
