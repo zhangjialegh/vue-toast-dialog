@@ -86,8 +86,7 @@ export default {
     text-align: center;
   }
   .pop-box-btn-wrap {
-    max-width: 100%;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
