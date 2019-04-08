@@ -9,8 +9,8 @@
       </div>
       <p class="pop-box-content">{{content}}</p>
       <div class="pop-box-btn-wrap">
-        <a class="pop-box-btn cancel" v-if="double" @click="cancel">{{cancelText}}</a>
-        <a class="pop-box-btn sure" @click="confirm">{{sureText}}</a>
+        <a class="pop-box-btn cancel" :style="{color: baseColor}" v-if="double" @click="cancel">{{cancelText}}</a>
+        <a class="pop-box-btn sure" :style="{backgroundColor: baseColor}" @click="confirm">{{sureText}}</a>
       </div>
     </div>
   </transition-box>
@@ -29,7 +29,8 @@ export default {
       cancelText: "取消",
       double: false,
       callback: null,
-      noCb: null
+      noCb: null,
+      baseColor: '#d5a478'
     };
   },
   methods: {
@@ -112,12 +113,10 @@ export default {
         opacity: 0.8;
       }
       &.sure {
-        background-color: #d5a478;
         color: #fff;
       }
       &.cancel {
         background-color: #ffffff;
-        color: #d5a478;
         border: 1px solid #e9e9e9;
         @media (max-width: 479px) {
           border: none;

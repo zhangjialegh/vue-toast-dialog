@@ -1,3 +1,6 @@
+# Vue.js toast plugin
+[![NPM](https://nodei.co/npm/vue-toast-dialog.png?compact=true)](https://nodei.co/npm/vue-toast-dialog/)
+
 # Installation
 ```
 npm i vue-toast-dialog
@@ -34,7 +37,8 @@ Vue.use(Toast)
             okCb: ()=>(),
             cancelText:'Cancel',
             noCb: ()=>(),
-            double: false
+            double: false,
+            baseColor: '#d5a478'
           })
         })
       }
@@ -59,8 +63,9 @@ if(!isServer) {
 ## Values
 - `title` - Title(String).
 - `content` - Content of Toast(String).
-- `double` - Display Cancel button or not(Boolean).
+- `double` - Display Cancel button or not(Boolean).default `false`.
 - `okText` - Text of Sure button(String).
 - `okCb` - Callback after clicking Sure button(Function).
 - `cancelText` - Text of Sure button(String).
 - `noCb` - Callback after clicking Cancel button(Function).
+- `baseColor` - Base Color of Component(String).default `#d5a478`.
