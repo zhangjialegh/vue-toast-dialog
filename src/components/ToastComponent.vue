@@ -22,11 +22,11 @@ export default {
   components: { TransitionBox },
   data() {
     return {
-      title: "提示",
+      title: "title",
       show: false,
       content: "",
-      sureText: "确定",
-      cancelText: "取消",
+      sureText: "Ok",
+      cancelText: "Cancel",
       double: false,
       callback: null,
       noCb: null,
@@ -93,6 +93,7 @@ export default {
     align-items: center;
     border-top: 1px solid #e8eaec;
     padding: 12px 18px;
+    box-sizing: border-box;
     @media (max-width: 479px) {
       padding: 0;
     }

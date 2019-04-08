@@ -29,17 +29,15 @@ Vue.use(Toast)
   export default {
     methods: {
       showToast() {
-         this.$toast({
-            this.$toast({
-            title: 'title',
-            content: 'Hello world!',
-            okText:'Ok',
-            okCb: ()=>(),
-            cancelText:'Cancel',
-            noCb: ()=>(),
-            double: false,
-            baseColor: '#d5a478'
-          })
+        this.$toast({
+          title: 'title',
+          content: 'Hello world!',
+          okText:'Ok',
+          okCb: ()=>{},
+          cancelText:'Cancel',
+          noCb: ()=>{},
+          double: false,
+          baseColor: '#d5a478'
         })
       }
     }
