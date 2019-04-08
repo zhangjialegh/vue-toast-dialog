@@ -1,7 +1,7 @@
 {
   "name": "vue-toast-dialog",
-  "version": "1.0.4",
-  "description": "A Vue Toast Component",
+  "version": "1.0.5",
+  "description": "Vue toast dialog",
   "main": "dist/toast.min.js",
   "author": "zhangjialegh <zjl1195185765@outlook.com>",
   "scripts": {
