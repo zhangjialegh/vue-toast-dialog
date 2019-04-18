@@ -17,14 +17,20 @@ import Vue from 'vue';
 
 import Toast from 'vue-toast-dialog'
 
-Vue.use(Toast)
+Vue.use(Toast, options)
 
-
-
+// 自定义插件全局参数
+// Example:
+// Vue.use(Toast,{
+//   title: 'Tips',
+//   okText: 'Sure',
+//   cancelText: 'Cancel',
+//   double: false,
+//   baseColor: '#d5a478'
+// })
 
 
 //app.vue
-
 ...
   export default {
     methods: {
@@ -45,18 +51,8 @@ Vue.use(Toast)
 ...
 
 ```
-> If you need to use it on vue ssr
 
-```javascript
-const isServer = Vue.prototype.$isServer
-
-if(!isServer) {
- const Toast = require('vue-toast-dialog').default
-  Vue.use(Toast)
-}
-```
-
-# options
+# Parameter
 
 ## Values
 - `title` - Title(String).
@@ -67,3 +63,11 @@ if(!isServer) {
 - `cancelText` - Text of Sure button(String).
 - `noCb` - Callback after clicking Cancel button(Function).
 - `baseColor` - Base Color of Component(String).default `#d5a478`.
+
+#### Options(Object)
+- `title` - Title(String).
+- `double` - Display Cancel button or not(Boolean).
+- `okText` - Text of Sure button(String).
+- `cancelText` - Text of Sure button(String).
+- `baseColor` - Base Color of Component(String).
+

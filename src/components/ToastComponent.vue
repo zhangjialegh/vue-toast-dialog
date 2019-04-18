@@ -22,6 +22,7 @@ export default {
   components: { TransitionBox },
   data() {
     return {
+      async: false,
       title: "title",
       show: false,
       content: "",
